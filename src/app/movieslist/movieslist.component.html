@@ -1,0 +1,29 @@
+<!-- <ul>
+    <div *ngFor="let movie of movies">
+        <div>
+            <div>
+                <label for="">Title: </label>
+                <span>{{movie.title}}</span>
+            </div>
+            <div>
+                <label for="">Release Date: </label>
+                <span>{{movie.releaseDate | date}}</span>
+            </div>
+            <div>
+                <label for="">Cast</label>
+                <ul>
+                    <li *ngFor="let cast of movie.cast">
+                        <span>{{cast.actor}}</span>
+                        <span>{{cast.role}}</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</ul> -->
+
+<ul>
+    <li *ngFor="let movie of movies">
+        <app-movie [movie]="movie"></app-movie>
+    </li>
+</ul>
